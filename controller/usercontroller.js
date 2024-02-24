@@ -59,13 +59,13 @@ exports.login = async (req, res) => {
                 }
                 else {
                     res.status(200).json({
-                        status: "check your email and password 1"
+                        status: "check your email and password..!"
                     })
                 }
             });
         } else {
             res.status(200).json({
-                status: "check your email and password 2"
+                status: "check your email and password..!"
             })
         }
     } else {

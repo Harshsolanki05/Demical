@@ -3,12 +3,15 @@ const bcrypt = require('bcrypt');
 login_status = 0;
 exports.insert = async (req, res) => {
 
+        
+
     if (req.body.password == req.body.con_pass) {
 
         var b_pass = await bcrypt.hash(req.body.password, 10);
         req.body.password = b_pass;
         req.body.con_pass = b_pass;
 
+            
         var data = await usermodel.create(req.body);
 
         res.status(200).json({

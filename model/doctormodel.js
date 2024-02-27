@@ -12,8 +12,8 @@ var doctorschema = new mongoose.Schema({
     password: {
         type: String
     },
-    con_pass: {
-        type: String
+    charge:{
+        type:String
     },
     cat_id:{
         type: mongoose.Schema.Types.ObjectId,

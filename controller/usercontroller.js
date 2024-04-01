@@ -1,9 +1,7 @@
 var usermodel = require('../model/usermodel')
 const bcrypt = require('bcrypt');
 login_status = 0;
-exports.insert = async (req, res) => {
-
-        
+exports.insert = async (req, res) => {        
 
     if (req.body.password == req.body.con_pass) {
 
